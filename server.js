@@ -1,9 +1,9 @@
+const fs = require('fs');
+const path = require('path');
 const express = require('express');
 const { animals } = require('./data/animals.json');
 const PORT = process.env.PORT || 3001;
 const app = express();
-const fs = require('fs');
-const path = require('path');
 
 // parse incoming string or array data
 app.use(express.urlencoded({ extended: true }));
